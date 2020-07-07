@@ -1,0 +1,1 @@
+worker: java $JAVA_OPTS -jar out/artifacts/testbot_jar/testbot.jar  $JAR_OPTS

@@ -1,14 +1,18 @@
-import IdStorage.TOKEN
-import IdStorage.USERNAME
 import com.elbekD.bot.Bot
 
-fun main() {
-    val bot = Bot.createPolling(USERNAME, TOKEN)
+class Main {
+    companion object {
 
-    bot.onInlineQuery { inlineQuery ->
-        val text = inlineQuery.query
-        val results = DBWannabe.findByQuery(text)
-        bot.answerInlineQuery(inlineQuery.id, results)
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val bot = Bot.createPolling(args[0], args[1])
+
+            bot.onInlineQuery { inlineQuery ->
+                val text = inlineQuery.query
+                val results = DBWannabe.findByQuery(text)
+                bot.answerInlineQuery(inlineQuery.id, results)
+            }
+            bot.start()
+        }
     }
-    bot.start()
 }
