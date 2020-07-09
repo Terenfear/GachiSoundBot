@@ -1,7 +1,7 @@
 import com.elbekD.bot.types.InlineQueryResultAudio
 
 object DBWannabe {
-    private const val baseUrl = "http://soundboard.ass-we-can.com/"
+    private const val baseUrl = "http://soundboard.ass-we-can.com"
     private val content = listOf(
             ResultWithSearchQuery(InlineQueryResultAudio("42837214-f6c7-4392-a0f0-a35d51ced16e", "$baseUrl/static/music/babyface/Do%20you%20like%20watching%20me.mp3", "Do you like watching me"), "do you like watching me"),
             ResultWithSearchQuery(InlineQueryResultAudio("28024ceb-466e-4dde-a04e-3d3cc56e2d14", "$baseUrl/static/music/babyface/On%20the%20house.mp3", "On the house"), "on the house"),
@@ -65,7 +65,7 @@ object DBWannabe {
             ResultWithSearchQuery(InlineQueryResultAudio("9b6c1530-beda-4232-99e0-a59994f32ac2", "$baseUrl/static/music/Unripped/It's%20macabre!.mp3", "It's macabre!"), "its macabre"),
             ResultWithSearchQuery(InlineQueryResultAudio("11dcde0c-0b4b-4d1c-9cef-8ba10caced50", "$baseUrl/static/music/Unripped/Mmmmh.mp3", "Mmmmh"), "mmmmh"),
             ResultWithSearchQuery(InlineQueryResultAudio("3f99f6c8-d1e2-4310-b4df-b55fad5475f9", "$baseUrl/static/music/Unripped/Right%20happy%20to.mp3", "Right happy to"), "right happy to"),
-            ResultWithSearchQuery(InlineQueryResultAudio("098af13d-82be-4134-9331-8a7fad8cc421", "$baseUrl/static/music/Unripped/Sorry.mp3", "Sorry"), "sorry"),
+            ResultWithSearchQuery(InlineQueryResultAudio("098af13d-82be-4134-9331-8a7fad8cc421", "$baseUrl/static/music/Unripped/Sorry.mp3", "Sorry"), "oh shit im sorry"),
             ResultWithSearchQuery(InlineQueryResultAudio("8a67ee65-8ecf-49f5-b37f-30ef86ea9b2c", "$baseUrl/static/music/Unripped/Without%20further%20interruption.mp3", "Without further interruption"), "without further interruption lets celebrate and suck some dick"),
             ResultWithSearchQuery(InlineQueryResultAudio("55856340-a72c-48ce-adc5-e11f0be65817", "$baseUrl/static/music/VanD/Boy%20next%20door.mp3", "Boy next door"), "boy next door"),
             ResultWithSearchQuery(InlineQueryResultAudio("8d5335de-bfa5-4d03-9afd-765d2f9e0b2c", "$baseUrl/static/music/VanD/Deep%20dark%20fantasies.mp3", "Deep dark fantasies"), "deep dark fantasies"),
